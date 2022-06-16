@@ -1,11 +1,11 @@
-from pyexpat import model
+
 from rest_framework import serializers
 from .models import Descripcion
 
 
 #DESCRIPCION SERIALIZERS
 
-class DescripcionSerializers(serializers.ModelSerializers):
+class DescripcionSrializers(serializers.ModelSerializer):
 
     class Meta:
         model = Descripcion
