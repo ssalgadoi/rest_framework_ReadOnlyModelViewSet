@@ -1,12 +1,12 @@
 from django.urls import path, include
-from clima_api import views
-from rest_framework.routers import DefaultRouter
+from .views import DescripcionViewSet
+from rest_framework import routers
 
 
-router = DefaultRouter()
-router.register('clima', views.DescripcionViewSet)
+router = routers.DefaultRouter()
+router.register('clima', DescripcionViewSet)
 
 urlpatterns = [
-    path('',include(router))
+    path('api/',include(router.urls))
 
 ]

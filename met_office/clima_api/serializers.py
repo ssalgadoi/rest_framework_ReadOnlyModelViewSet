@@ -1,6 +1,7 @@
 
-from rest_framework import serializers
+
 from .models import Descripcion
+from rest_framework import serializers
 
 
 #DESCRIPCION SERIALIZERS
@@ -9,4 +10,4 @@ class DescripcionSrializers(serializers.ModelSerializer):
 
     class Meta:
         model = Descripcion
-        fields = ['id', 'descripcion_clima', 'temperatura', 'crear_en']
+        fields = '__all__'
