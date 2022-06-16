@@ -21,3 +21,7 @@ class Descripcion(models.Model):
     class Meta:
         ordering = ['-crear_en']
 
+
+    def __str__(self):
+        return str(self.crear_en)
+
